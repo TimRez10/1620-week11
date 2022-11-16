@@ -28,7 +28,7 @@
 // resultPara.textContent += ': ' + circle(findArea)
 
 
-let shopItems = ["cheese","bread","pepper"];
+let shopItems = ["cheese","bread","green pepper"];
 const shoppingListElement = document.querySelector(".shopping")
 
 const createItem = (shoppingItem) => {
@@ -45,4 +45,14 @@ function changeListStyle () {
     shoppingListElement.classList.add("squareList");
 }
 
-changeListStyle()
+changeListStyle();
+
+function makeGreen () {
+    const allListItems = document.querySelectorAll(".shopping li");
+    for (let i of allListItems) {
+        if (i.textContent.includes("green")) {
+            i.classList.add("greenItems")
+        }
+    }
+}
+makeGreen()
