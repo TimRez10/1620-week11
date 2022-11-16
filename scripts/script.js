@@ -38,5 +38,11 @@ const createItem = (shoppingItem) => {
         shoppingListElement.appendChild(listItem);
     }
 }
+createItem(shopItems);
 
-createItem(shopItems)
+function changeListStyle () {
+    shoppingListElement.classList.remove("circleList");
+    shoppingListElement.classList.add("squareList");
+}
+
+changeListStyle()
