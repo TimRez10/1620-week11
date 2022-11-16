@@ -14,9 +14,8 @@
 // greet();
 
 const circle = (circleRadius) => {
-    let area = 2 * Math.PI * circleRadius
-    return area.toFixed(2)
+    let area = Math.PI * circleRadius ** 2;
+    return area.toFixed(2);
 }
-
-let findArea = prompt("Enter the radius")
-alert(`The area of a circle is ${circle(findArea)}`)
+let findArea = prompt("Enter the radius");
+alert(`The area of a circle with radius ${findArea} is ${circle(findArea)}`);
